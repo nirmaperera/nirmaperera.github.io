@@ -44,7 +44,7 @@
 
                     <div class="col-4 col-12-medium">
                         <!-- Sidebar -->
-                        <section id="sidebar">
+                        <section id="sidebar special fade-down">
                             <section>
                                 <a href="#" class="image fit"><img src="images/NationalGrid.jpg" alt="" /></a>
                                 <h3>Tech Stack</h3>
@@ -69,43 +69,46 @@
                         <!-- Content -->
                         <section id="content">
                             <h3>My Role</h3>
-                            <p>Frontend developer and designer</p>
-                            <p>During the beginning of the project, I designed the mockups and chose the color palette.
-                                Some of
-                                features I was in charge was the posting a recipe, which was done by using a form,
-                                searching for
-                                a recipe by filtering through the name of the recipe, landing page/responsive navbar,
-                                and profile page.
+                            <p>Frontend Application</p>
+                            <p> I wanted to redesign the currect login and register page for National Grid, because I
+                                believed that those pages were outdated. In the proces of doing so, I wanted to
+                                familirse with flexbox and SASS. However, during the process I eventually ended up
+                                adding more logic like user authenticaton, state persistance, etc.
                             </p>
                             <hr />
                             <h3>Project Difficulties</h3>
-                            <p>The original idea of the project was to build a fun and interactive way to post a recipe
-                                animation,etc. A
-                                example
-                                of our inspiration was <a href>something</a></p>. Scaling down the project was
-                            something we had trouble with,
-                            because as a team we had to decide which features were the most important. Learning redux
-                            for the first time
-                            came with a difficulty in the beginning.
+                            <p>
+                                Some of the Difficulties I faced was state managemnt, private routes, and state
+                                persistence. I wanted a way
+                                to check if the user was logged in, and if so, change the Navigation bar, and vice
+                                versa. Simarlarly, I wanted to prevent the user from accessing dashboard and profile
+                                route if the user was not logged in. Lastly, because the redux store gets return to its
+                                inital state upon page refresh, i wanted a wata to persist the state.
+                            </p>
 
                             <hr />
                             <h3>Project Solutions</h3>
-                            <p>Scaling down the project made the application way easier to do given the time
-                                constrainst. To learn redux, I
-                                looked tutorials on youtube which helped in understanding core concepts.</p>
+                            <p> One way I managed state was by using Redux. Although there was alot of boilerplate
+                                code, I found that it was easy to grasp and good to familarize with. In case, the
+                                project was to scale, using redux is beneficial. I solved the private route issue, by
+                                creating a PrivateRoute function and passing isLogged(state in redux) as a prop to
+                                PrivateRoute. Finally, I persisted redux state to local storage by writing two
+                                function, one which saves the state to local storage, and the other which load the
+                                state from local storage. </p>
                             <hr />
                             <h3>Application Features</h3>
                             <ul>
                                 <li>Registration</li>
                                 <li>Login</li>
                                 <li>User authentication</li>
-                                <li>Profile</li>
-                                <li>Search for a recipe by category </li>
-                                <li>Post a recipe</li>
+                                <li>Profile (change user info)</li>
+                                <li>Dashboard (Pay Bill)</li>
                             </ul>
                             <hr>
-                            <h3>What's missing?</h3>
-                            <p>Responsivness throughtout the whole application and adding a comments/rating feature</p>
+                            <h3>What's Missing?</h3>
+                            <p> The Application only contains Login, Register, Dashboard, and Profile components. It
+                                can scale to other conponents like View bill, stop and start service, etc, given the
+                                resources. </p>
                         </section>
 
                     </div>
