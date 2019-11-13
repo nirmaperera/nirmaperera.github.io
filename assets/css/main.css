@@ -72,7 +72,27 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+.aboutMe-info{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.contact-me{
 
+	border: 2px solid #e44c65;
+	width:50%;
+	text-align: center;
+	font-size:13px;
+	display: flex;
+	flex-direction: column;
+	padding:20px;
+	margin-top:20px;
+
+}
+.contact-me hr{
+	margin:0;
+}
 /* Basic */
 
 	html {
