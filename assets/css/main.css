@@ -3534,19 +3534,7 @@ input, select, textarea {
 			width: 1%;
 		}
 
-		#banner:after {
-			background-image: url("../../images/backgroundImg.jpg");
-			background-size: cover;
-			background-position: center;
-			background-attachment:fixed;
-			content: '';
-			display: block;
-			height: 100%;
-			left: 0;
-			position: absolute;
-			top: 0;
-			width: 100%;
-		}
+
 
 		#banner .content {
 			display: inline-block;
@@ -3869,13 +3857,13 @@ input, select, textarea {
 				box-shadow: 0 0.125em 0.5em 0 rgba(0, 0, 0, 0.25);
 				min-height: calc(100vh - 44px);
 				background-image: url(../../images/backgroundImg.jpg);
-    background-position: center center;
-    background-size: cover;
-    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-    min-height: 100vh;
-    position: relative;
-    text-align: center;
-    z-index: 21;
+				background-position: center center;
+				background-size: cover;
+				box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+				min-height: 100vh;
+				position: relative;
+				text-align: center;
+				z-index: 21;
 			}
 
 				#banner:before {
