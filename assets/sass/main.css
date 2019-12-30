@@ -110,10 +110,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: #e44c65 !important;
-  border-bottom-color: transparent;
-}
 
 strong, b {
   color: #ffffff;
@@ -2079,8 +2075,8 @@ input[type="radio"] + label:before {
   font-weight: 400;
 }
 
-.icon.alt:before {
-  color: #1c1d26 !important;
+.icon.alt:hover{
+  color:red !important;
   text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff;
 }
 
@@ -3139,6 +3135,10 @@ body.is-touch #banner {
   font-weight: 400;
 }
 
+.icons a:hover {
+  color:red !important;
+}
+
 #footer .icons .icon.alt:before {
   color: #272833 !important;
   text-shadow: 1px 0 0 rgba(255, 255, 255, 0.5), -1px 0 0 rgba(255, 255, 255, 0.5), 0 1px 0 rgba(255, 255, 255, 0.5), 0 -1px 0 rgba(255, 255, 255, 0.5);
@@ -3526,6 +3526,12 @@ body.is-touch #banner {
     padding: 3.25em 1.5em;
   }
 }
+
+a:hover {
+  color: #e44c65 !important;
+  border-bottom-color: transparent;
+}
+
 
 /* XSmall */
 @media screen and (max-width: 480px) {
