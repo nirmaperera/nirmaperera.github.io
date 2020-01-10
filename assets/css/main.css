@@ -132,7 +132,7 @@ input, select, textarea {
 		-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: black;
+		color: #e44c65;
 		text-decoration: none;
 	}
 
@@ -148,6 +148,11 @@ input, select, textarea {
 
 	em, i {
 		font-style: italic;
+	}
+
+	ul.icons a{
+		color: black;
+
 	}
 
 	/* p {
