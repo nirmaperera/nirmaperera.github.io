@@ -72,16 +72,37 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+a.button.primary.github{
+	margin-right: 20px;
+}
+.content-leaf{
+	display: flex;
+	justify-content: flex-end;
+}
+.content-headline{
+	margin:0;
+	margin-top:20px;
+}
+
+
+.content-leaf > img{
+	width: 50px;
+	max-width: 50px;
+}
+
 .aboutMe-info{
+	flex:1;
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
+.aboutMe-info > p {
+	color:#fff;
+}
 .contact-me{
-
 	border: 2px solid #e44c65;
-	width:50%;
+	border-radius: 30px;
 	text-align: center;
 	font-size:13px;
 	display: flex;
@@ -92,6 +113,24 @@ input, select, textarea {
 }
 .contact-me hr{
 	margin:0;
+}
+
+.aboutMe-pic{
+	flex: 1;
+    display: flex;
+    align-items: center;
+
+}
+.aboutMe-pic > img{
+	width:450px
+}
+
+.content-about{
+display: flex;
+box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.65);
+padding: 40px;
+border-radius: 20px;
+background: rgba(39, 40, 51, 0.965);
 }
 /* Basic */
 
@@ -119,7 +158,7 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		color: rgba(255, 255, 255, 0.75);
+		color:white;
 		font-family: "Roboto", Helvetica, sans-serif;
 		font-size: 15pt;
 		font-weight: 100;
@@ -2213,7 +2252,7 @@ input, select, textarea {
 	}
 
 	header.major {
-		margin: 0 0 4em 0;
+		margin: 0 0 1em 0;
 		position: relative;
 		text-align: center;
 	}
@@ -2225,6 +2264,9 @@ input, select, textarea {
 			height: 0.2em;
 			max-width: 20em;
 			width: 75%;
+		}
+		header.major> h2{
+			margin:0;
 		}
 
 	footer.major {
@@ -3145,7 +3187,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 			-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 			transition: transform 1s ease, opacity 1s ease;
-			background: #8D9095;
+			background: rgba(39, 40, 51, 0.965);
 			border-style: solid;
 			opacity: 1;
 			position: absolute;
@@ -3201,15 +3243,15 @@ input, select, textarea {
 		}
 
 		.spotlight.style1 .content {
-			border-color: #AEAA4F;
+			border-color: #e44c65;
 		}
 
 		.spotlight.style2 .content {
-			border-color: #AD6F22;
+			border-color: #e44c65
 		}
 
 		.spotlight.style3 .content {
-			border-color: #B51C2E;
+			border-color: #e44c65;
 		}
 
 		.spotlight.inactive .content {
@@ -3667,6 +3709,15 @@ input, select, textarea {
 			}
 
 	}
+	@media screen and (max-width: 1100px) {
+		.content-about{
+			flex-direction: column;
+		}
+		.aboutMe-pic{
+			justify-content: center;
+			margin-bottom: 20px;
+		}
+	}
 
 /* Medium */
 
@@ -4082,6 +4133,10 @@ input, select, textarea {
 /* XSmall */
 
 	@media screen and (max-width: 480px) {
+		.aboutMe-pic > img{
+			width: 250px;
+			margin-bottom: 20px;
+		}
 
 		/* Basic */
 

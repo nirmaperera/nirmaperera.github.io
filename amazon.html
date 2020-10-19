@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Amazon Clone</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo">Nirma Perera</h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Projects</a>
+                        <ul>
+                            <!-- <li><a href="amazon.html"> Amazon Clone</a></li> -->
+                            <li><a href="NationalGrid.html"> National Grid Login </a></li>
+                            <li><a href="bakersBook.html"> Baker's Book</a></li>
+                            <li><a href="wine.html"> Wine Selector</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div id="main" class="wrapper style1">
+            <div class="container">
+                <header class="major">
+                    <h2>Amazon Clone</h2>
+                    <p>Clone of Amazon build with react and firbase</p>
+                </header>
+                <div class="row gtr-150">
+
+                    <div class="col-4 col-12-medium">
+                        <!-- Sidebar -->
+                        <section id="sidebar special fade-down">
+                            <section>
+                                <a href="https://fir-2a086.web.app" class="image fit"><img src="images/NationalGrid.jpg"
+                                        alt="" /></a>
+                                <h3>Tech Stack</h3>
+                                <ul>
+                                    <li>React</li>
+                                    <li>Express</li>
+                                    <li>Google Maps Javascript API</li>
+                                    <li>Stripe</li>
+                                    <li>Firebase</li>
+
+                                </ul>
+                                <footer>
+                                    <ul class="actions">
+                                        <li><a href="https://github.com/nirmaperera/amazon-clone" class="button">View
+                                                Code</a></li>
+                                        <!-- <li><a href="#" class="button">View Wireframes</a></li> -->
+                                    </ul>
+                                </footer>
+                            </section>
+                            <hr />
+                        </section>
+                    </div>
+                    <div class="col-8 col-16-medium">
+
+                        <!-- Content -->
+                        <section id="content">
+                            <h3>Full Stack Application</h3>
+                            <p>This project is a clone of amazon and a full stack application. The UI design is similar
+                                to Amazon using its brand colors, logos, product images in addition to some animations.
+                                 In addition, I wanted to familiarize myself with new technology such as stripe, context
+                                API, and using the Cloud Firestore from firebase.
+
+
+                            </p>
+                            <hr />
+                            <h3>Project Difficulties</h3>
+                            <p>
+                                Some of the difficulties I faced was state management, private routes, and state
+                                persistence. I needed a way to check if the user was logged in, and if so, change the
+                                navigation bar, and vice versa. Similarly, I wanted to prevent the user from accessing
+                                the dashboard and profile route if the user was not logged in by using private routes.
+                                Lastly, because the redux store gets returned to its initial state upon page refresh, I
+                                wanted a way to persist the state.
+                            </p>
+
+                            <hr />
+                            <h3>Project Solutions</h3>
+                            <p> One way I managed state was by using Redux. Although, there was some boilerplate code
+                                when learning redux, I found that it was easy to grasp and good to familiarize with
+                                when it comes to front end development. In case, the application was to scale up, using
+                                redux is beneficial. I solved the private route issue, by creating a PrivateRoute
+                                function and passing isLogged (state in redux) as a prop to PrivateRoute. Finally, I
+                                persisted redux state to local storage by writing two functions, one which saves the
+                                state to local storage, and the other which loads the state from local storage. </p>
+                            <hr />
+                            <h3>Application Features</h3>
+                            <ul>
+                                <li>Registration/login</li>
+                                <li>User authentication</li>
+                                <li>Search for products</li>
+                                <li>Product overview</li>
+                                <li>Add products to cart and checkout</li>
+                                <li>View orders </li>
+                                <!-- <li>Profile- user information </li> -->
+                            </ul>
+                            <hr>
+                            <h3>What's Missing?</h3>
+                            <p> Some features that would be beneficial for this build would have dynamic rating system
+                                in addition to having customers post reviews of products once logged into their account.
+                            </p>
+                        </section>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
