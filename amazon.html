@@ -22,7 +22,7 @@
                     <li>
                         <a href="#">Projects</a>
                         <ul>
-                            <!-- <li><a href="amazon.html"> Amazon Clone</a></li> -->
+                            <li><a href="amazon.html"> Amazon Clone</a></li>
                             <li><a href="NationalGrid.html"> National Grid Login </a></li>
                             <li><a href="bakersBook.html"> Baker's Book</a></li>
                             <li><a href="wine.html"> Wine Selector</a></li>
@@ -46,7 +46,7 @@
                         <!-- Sidebar -->
                         <section id="sidebar special fade-down">
                             <section>
-                                <a href="https://fir-2a086.web.app" class="image fit"><img src="images/NationalGrid.jpg"
+                                <a href="https://fir-2a086.web.app" class="image fit"><img src="images/amazonMock.jpg"
                                         alt="" /></a>
                                 <h3>Tech Stack</h3>
                                 <ul>
@@ -74,7 +74,7 @@
                         <section id="content">
                             <h3>Full Stack Application</h3>
                             <p>This project is a clone of amazon and a full stack application. The UI design is similar
-                                to Amazon using its brand colors, logos, product images in addition to some animations.
+                                to Amazon using its brand colors, logos, product images as well as some animations.
                                  In addition, I wanted to familiarize myself with new technology such as stripe, context
                                 API, and using the Cloud Firestore from firebase.
 
@@ -83,23 +83,39 @@
                             <hr />
                             <h3>Project Difficulties</h3>
                             <p>
-                                Some of the difficulties I faced was state management, private routes, and state
-                                persistence. I needed a way to check if the user was logged in, and if so, change the
-                                navigation bar, and vice versa. Similarly, I wanted to prevent the user from accessing
-                                the dashboard and profile route if the user was not logged in by using private routes.
-                                Lastly, because the redux store gets returned to its initial state upon page refresh, I
-                                wanted a way to persist the state.
+                                Some of the difficulties I faced was state management, understanding Stripe and how to
+                                process customer’s payments, using express and firebase cloud functions, as well as
+                                using the Cloud Firestore. For this build, I decided to use the context API for state
+                                management. To process payments, I had to understand the documentation to use Stripe
+                                REST API in test mode. Finally, creating an REST API using Express with Firebase cloud
+                                functions also needed further reading and researching.
                             </p>
 
                             <hr />
                             <h3>Project Solutions</h3>
-                            <p> One way I managed state was by using Redux. Although, there was some boilerplate code
-                                when learning redux, I found that it was easy to grasp and good to familiarize with
-                                when it comes to front end development. In case, the application was to scale up, using
-                                redux is beneficial. I solved the private route issue, by creating a PrivateRoute
-                                function and passing isLogged (state in redux) as a prop to PrivateRoute. Finally, I
-                                persisted redux state to local storage by writing two functions, one which saves the
-                                state to local storage, and the other which loads the state from local storage. </p>
+                            <p> I used react’s context API to do state management. Similar to redux, context allows us
+                                to share values between components without having to explicitly pass a prop through
+                                every level of the tree, or prop drilling. For the build, context was used for holding
+                                the cart state, user authentication, settings the user’s home address for delivery, etc.
+                                I found that context api was a lot easier to grasp than redux which has much less
+                                boilerplate code. However, redux is still the better solution for complex state, since
+                                context will trigger a re render on each update and ultimately would be difficult to
+                                optimize. <br />
+
+                                In addition, Stripe is a payment processing software and for this build, <a
+                                    href="https://stripe.com/docs/api">Stripe Rest API</a>
+                                was used to process payments using a paymentIntent. “A PaymentIntent guides you through
+                                the process of collecting a payment from your customer”. The payment was then confirmed
+                                and completed with the client secret. Once the payment was confirmed, the customers
+                                order ( products, date ordered, payment amount ) was pushed into, Cloud Firestore, a
+                                real time database.<br />
+
+
+                                Similarly, this was the first time using firebase, so setting up firebase tools was new
+                                to me. Reading the documentation helped understand how to read and write into
+                                collections in the Firestore especially for user’s details like home address.
+                                Furthermore, express helped host the API on a Cloud Function and then pass the express
+                                instance directly into the Cloud Function HTTPS handler. </p>
                             <hr />
                             <h3>Application Features</h3>
                             <ul>
@@ -109,6 +125,7 @@
                                 <li>Product overview</li>
                                 <li>Add products to cart and checkout</li>
                                 <li>View orders </li>
+                                <li>Get user's home address for delivery (Google Maps API) </li>
                                 <!-- <li>Profile- user information </li> -->
                             </ul>
                             <hr>
