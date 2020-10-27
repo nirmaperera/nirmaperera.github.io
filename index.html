@@ -39,7 +39,10 @@
 					<li>
 						<a href="#">Projects</a>
 						<ul>
-							<li><a href="amazon.html"> Amazon Clone</a></li>
+							<li><a href="amazon.html" class="button"
+									onclick="gtag('event', 'amazon-page', { 'event_category': 'page Link','event_label':'amazonClone-page' });">Amazon
+									Clone
+								</a></li>
 							<li><a href="NationalGrid.html"> National Grid Login </a></li>
 							<li><a href="bakersBook.html"> Baker's Book</a></li>
 							<li><a href="wine.html"> Wine Selector</a></li>
@@ -87,15 +90,15 @@
 				</p>
 				<ul class="actions">
 					<li><a href="amazon.html" class="button"
-							onclick="gtag('event','click',{'event_category':'Click','event_label':'amazonClone-page'});">Learn
+							onclick="gtag('event', 'amazon-page', { 'event_category': 'page Link','event_label':'amazonClone-page' });">Learn
 							More</a></li>
 				</ul>
 				<div>
 					<a href="https://github.com/nirmaperera/amazon-clone" class="button primary github "
-						onclick="gtag('event', 'Click', { 'event_category': 'github Link', 'event_action':'Click','event_label':'amazonClone-github' });">View
+						onclick="gtag('event', 'amazon-github', { 'event_category': 'github Link','event_label':'amazonClone-github' });">View
 						Code</a>
 					<a href="https://fir-2a086.web.app" class="button primary "
-						onclick="gtag('event', 'Click', { 'event_category': 'demo Link', 'event_action':'Click','event_label':'amazonClone-demo' });">View
+						onclick="gtag('event', 'amazon-demo', { 'event_category': 'demo Link','event_label':'amazonClone-demo' });">View
 						Demo</a>
 				</div>
 				<hr />
@@ -113,12 +116,17 @@
 				<p>
 					A redesign of login, register, dashboard, profile, and pay bill pages. </p>
 				<ul class="actions">
-					<li><a href="NationalGrid.html" class="button">Learn More</a></li>
+					<li><a href="NationalGrid.html" class="button"
+							onclick="gtag('event', 'nationalGrid-page', { 'event_category': 'page Link','event_label':'nationalGrid-page' });">Learn
+							More</a></li>
 				</ul>
 				<div>
-					<a href="https://github.com/nirmaperera/NationalGridRedesign" class="button primary github">View
+					<a href="https://github.com/nirmaperera/NationalGridRedesign" class="button primary github "
+						onclick="gtag('event', 'nationalGrid-github', { 'event_category': 'github Link','event_label':'nationalGrid-github' });">View
 						Code</a>
-					<a href="https://national-grid.herokuapp.com" class="button primary ">View Demo</a>
+					<a href="https://national-grid.herokuapp.com" class="button primary "
+						onclick="gtag('event', 'nationalGrid-demo', { 'event_category': 'demo Link','event_label':'nationalGrid-demo' });">View
+						Demo</a>
 				</div>
 				<hr>
 			</div>
@@ -143,7 +151,10 @@
 				</ul>
 				<div>
 					<a href="https://github.com/nirmaperera/BakersBook" class="button primary github ">View Code</a>
-					<a href="https://bakersbook-74fd9.firebaseapp.com/" class="button primary ">View Demo</a>
+
+					<a href="https://bakersbook-74fd9.firebaseapp.com/" class="button primary "
+						onclick="gtag('event', 'bakersBook-demo', { 'event_category': 'demo Link','event_label':'bakersBook-demo' });">View
+						Demo</a>
 				</div>
 				<hr />
 
