@@ -73,9 +73,11 @@
                         <!-- Content -->
                         <section id="content">
                             <h3>Full Stack Application</h3>
-                            <p>This project is a clone of amazon and a full stack application. The UI design is similar
+                            <p>This project is a clone of <a href="https://www.amazon.com/"> Amazon </a>and a full stack
+                                application. The UI design is similar
                                 to Amazon using its brand colors, logos, product images as well as some animations.
-                                 In addition, I wanted to familiarize myself with new technology such as stripe, context
+                                 In addition, I wanted to familiarize myself with new technology such as <a
+                                    href="https://stripe.com/"> Stripe </a>, context
                                 API, and using the Cloud Firestore from firebase.
 
 
@@ -87,17 +89,18 @@
                                 process customer’s payments, using express and firebase cloud functions, as well as
                                 using the Cloud Firestore. For this build, I decided to use the context API for state
                                 management. To process payments, I had to understand the documentation to use Stripe
-                                REST API in test mode. Finally, creating an REST API using Express with Firebase cloud
+                                REST API in test mode. Finally, implementing an REST API using Express with Firebase
+                                cloud
                                 functions also needed further reading and researching.
                             </p>
 
                             <hr />
                             <h3>Project Solutions</h3>
-                            <p> I used react’s context API to do state management. Similar to redux, context allows us
+                            <p> Similar to redux, context allows us
                                 to share values between components without having to explicitly pass a prop through
                                 every level of the tree, or prop drilling. For the build, context was used for holding
                                 the cart state, user authentication, settings the user’s home address for delivery, etc.
-                                I found that context api was a lot easier to grasp than redux which has much less
+                                I found that context api was a lot easier to grasp than redux, which has much less
                                 boilerplate code. However, redux is still the better solution for complex state, since
                                 context will trigger a re render on each update and ultimately would be difficult to
                                 optimize. <br />
@@ -106,15 +109,16 @@
                                     href="https://stripe.com/docs/api">Stripe Rest API</a>
                                 was used to process payments using a paymentIntent. “A PaymentIntent guides you through
                                 the process of collecting a payment from your customer”. The payment was then confirmed
-                                and completed with the client secret. Once the payment was confirmed, the customers
+                                and completed with the client secret. Once the payment was confirmed, the customer's
                                 order ( products, date ordered, payment amount ) was pushed into, Cloud Firestore, a
                                 real time database.<br />
 
 
-                                Similarly, this was the first time using firebase, so setting up firebase tools was new
-                                to me. Reading the documentation helped understand how to read and write into
-                                collections in the Firestore especially for user’s details like home address.
-                                Furthermore, express helped host the API on a Cloud Function and then pass the express
+                                Similarly, this was my first time using firebase, so setting up firebase tools was new
+                                to me. Reading the documentation helped me understand how to read and write into
+                                collections in the Firestore, especially for the user’s details (ex. home address).
+                                Furthermore, express helped me host the API on a Cloud Function and then pass the
+                                express
                                 instance directly into the Cloud Function HTTPS handler. </p>
                             <hr />
                             <h3>Application Features</h3>
@@ -130,7 +134,7 @@
                             </ul>
                             <hr>
                             <h3>What's Missing?</h3>
-                            <p> Some features that would be beneficial for this build would have dynamic rating system
+                            <p> Some features that would be beneficial for this build would be a dynamic rating system
                                 in addition to having customers post reviews of products once logged into their account.
                             </p>
                         </section>
