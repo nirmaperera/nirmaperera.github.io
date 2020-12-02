@@ -27,7 +27,7 @@
 	</script>
 </head>
 
-<body class="is-preload landing">
+<body class=" landing">
 	<div id="page-wrapper">
 
 		<!-- Header -->
@@ -39,7 +39,9 @@
 					<li>
 						<a href="#">Projects</a>
 						<ul>
-							<!-- <li><a href="chatz.html"> Chat App </a></li> -->
+							<li><a href="chatz.html"
+									onclick="gtag('event', 'telechat-page', { 'event_category': 'page Link','event_label':'telechat-page' });">
+									Telechat </a></li>
 							<li><a href="amazon.html"
 									onclick="gtag('event', 'amazon-page', { 'event_category': 'page Link','event_label':'amazonClone-page' });">
 									Amazon Clone </a></li>
@@ -85,9 +87,12 @@
 				</header>
 				<p>
 					A Chat App where users can send text, emojis, gifs, images, and stickers to their friends</p>
-				<!-- <ul class="actions">
-					<li><a href=" " class="button">Learn More</a></li>
-				</ul> -->
+				<ul class="actions">
+					<li><a href="chatz.html" class="button"
+							onclick="gtag('event', 'telechat-page', { 'event_category': 'page Link','event_label':'telechat-page' });">Learn
+							More</a></li>
+				</ul>
+
 				<div>
 					<a href="https://github.com/nirmaperera/telechat" class="button primary github "
 						onclick="gtag('event', 'telechat-github', { 'event_category': 'github Link','event_label':'nationalGrid-github' });">View
