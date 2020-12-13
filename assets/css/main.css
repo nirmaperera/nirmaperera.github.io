@@ -101,8 +101,6 @@ a.button.primary.github{
 	color:#fff;
 }
 .contact-me{
-	border: 2px solid #e44c65;
-	border-radius: 30px;
 	text-align: center;
 	font-size:13px;
 	display: flex;
@@ -110,6 +108,9 @@ a.button.primary.github{
 	padding:20px;
 	margin-top:20px;
 
+}
+.contact-me > ul.icons a{
+	color:#E44C65;
 }
 .contact-me hr{
 	margin:0;
@@ -3292,7 +3293,7 @@ background: rgba(39, 40, 51, 0.965);
 /* Wrapper */
 
 	.wrapper {
-		padding: 6em 0 4em 0;
+		padding: 2em 0 4em 0;
 	}
 
 		.wrapper.style2 {
@@ -3678,7 +3679,7 @@ background: rgba(39, 40, 51, 0.965);
 		/* Wrapper */
 
 			.wrapper {
-				padding: 4.5em 0 2.5em 0;
+				padding: 2em 0 2.5em 0;
 			}
 
 		/* Dropotron */
